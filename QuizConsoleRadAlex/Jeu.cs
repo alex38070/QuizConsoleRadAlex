@@ -4,7 +4,10 @@ internal class Jeu
 {
     public void Jouer()
     {
-        LancerSession();
+        do
+        {
+            LancerSession();
+        } while (UtilitairesConsole.PoserChoix("Souhaitez-vous rejouer ?", ["Oui", "Non"]) == "Oui");
     }
 
     private void LancerSession()
