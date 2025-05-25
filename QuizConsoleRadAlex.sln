@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizConsoleRadAlex", "QuizConsoleRadAlex\QuizConsoleRadAlex.csproj", "{09FB9FDD-E4A3-4A7B-8AA1-E260ECF70996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09FB9FDD-E4A3-4A7B-8AA1-E260ECF70996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FB9FDD-E4A3-4A7B-8AA1-E260ECF70996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FB9FDD-E4A3-4A7B-8AA1-E260ECF70996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FB9FDD-E4A3-4A7B-8AA1-E260ECF70996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B4243AC-30C0-4255-9A47-C545FCAA4CBE}
+	EndGlobalSection
+EndGlobal
