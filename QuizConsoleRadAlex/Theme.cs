@@ -7,7 +7,6 @@ public class Theme(string nom, IEnumerable<Question> questions)
 
     public static Theme DemanderAUtilisateur()
     {
-        // Demande saisie utilisateur : Veuillez choisir un theme
         string choixUtilisateur = UtilitairesConsole.PoserChoix("Veuillez choisir un thème", _themes.Select(t => t.Nom));
 
         return _themes.First(t => t.Nom == choixUtilisateur);
@@ -23,29 +22,29 @@ public class Theme(string nom, IEnumerable<Question> questions)
                 ],
                 "Il stocke de l’énergie cinétique pour réguler les variations de régime moteur"),
 
-            //new Question("Lors d’une vidange, pourquoi change-t-on également le filtre à huile ?",
-            //    [
-            //        "Parce qu’il empêche l’huile de devenir trop visqueuse",
-            //        "Parce qu’il retient les impuretés qui pourraient circuler avec la nouvelle huile",
-            //        "Parce qu’il améliore la combustion dans les cylindres"
-            //    ],
-            //    "Parce qu’il retient les impuretés qui pourraient circuler avec la nouvelle huile"),
+            new Question("Lors d’une vidange, pourquoi change-t-on également le filtre à huile ?",
+                [
+                    "Parce qu’il empêche l’huile de devenir trop visqueuse",
+                    "Parce qu’il retient les impuretés qui pourraient circuler avec la nouvelle huile",
+                    "Parce qu’il améliore la combustion dans les cylindres"
+                ],
+                "Parce qu’il retient les impuretés qui pourraient circuler avec la nouvelle huile"),
 
-            //new Question("Quelle anomalie pourrait entraîner une surconsommation de carburant ?",
-            //    [
-            //        "Une courroie d’accessoire trop tendue",
-            //        "Un filtre à air légèrement encrassé",
-            //        "Un liquide de refroidissement trop ancien"
-            //    ],
-            //    "Un filtre à air légèrement encrassé"),
+            new Question("Quelle anomalie pourrait entraîner une surconsommation de carburant ?",
+                [
+                    "Une courroie d’accessoire trop tendue",
+                    "Un filtre à air légèrement encrassé",
+                    "Un liquide de refroidissement trop ancien"
+                ],
+                "Un filtre à air légèrement encrassé"),
 
-            //new Question("Quelle est la particularité d’un moteur à injection directe par rapport à un moteur à injection indirecte ?",
-            //    [
-            //        "L’injection se fait dans le collecteur d’admission",
-            //        "L’injection se fait directement dans la chambre de combustion",
-            //        "L’injection est contrôlée mécaniquement"
-            //    ],
-            //    "L’injection se fait directement dans la chambre de combustion"),
+            new Question("Quelle est la particularité d’un moteur à injection directe par rapport à un moteur à injection indirecte ?",
+                [
+                    "L’injection se fait dans le collecteur d’admission",
+                    "L’injection se fait directement dans la chambre de combustion",
+                    "L’injection est contrôlée mécaniquement"
+                ],
+                "L’injection se fait directement dans la chambre de combustion"),
 
             //new Question("Un disque de frein voilé provoquera principalement :",
             //    [
@@ -105,29 +104,29 @@ public class Theme(string nom, IEnumerable<Question> questions)
                 ],
                 "Il définit une classe abstraite."),
 
-            //new Question("À quoi sert 'async' ?",
-            //    [
-            //        "Il permet de déclarer une méthode asynchrone.",
-            //        "Il définit une interface.",
-            //        "Il gère le garbage collector."
-            //    ],
-            //    "Il permet de déclarer une méthode asynchrone."),
+            new Question("À quoi sert 'async' ?",
+                [
+                    "Il permet de déclarer une méthode asynchrone.",
+                    "Il définit une interface.",
+                    "Il gère le garbage collector."
+                ],
+                "Il permet de déclarer une méthode asynchrone."),
 
-            //new Question("Quelle est l'utilisation de 'await' ?",
-            //    [
-            //        "Il contrôle la mémoire.",
-            //        "Il attend la fin d'une tâche asynchrone.",
-            //        "Il fait une conversion implicite."
-            //    ],
-            //    "Il attend la fin d'une tâche asynchrone."),
+            new Question("Quelle est l'utilisation de 'await' ?",
+                [
+                    "Il contrôle la mémoire.",
+                    "Il attend la fin d'une tâche asynchrone.",
+                    "Il fait une conversion implicite."
+                ],
+                "Il attend la fin d'une tâche asynchrone."),
 
-            //new Question("Que fait 'sealed' en C# ?",
-            //    [
-            //        "Il crée un objet.",
-            //        "Il empêche l'héritage d'une classe.",
-            //        "Il surcharge un opérateur."
-            //    ],
-            //    "Il empêche l'héritage d'une classe."),
+            new Question("Que fait 'sealed' en C# ?",
+                [
+                    "Il crée un objet.",
+                    "Il empêche l'héritage d'une classe.",
+                    "Il surcharge un opérateur."
+                ],
+                "Il empêche l'héritage d'une classe."),
 
             //new Question("Que fait 'override' en C# ?",
             //    [
